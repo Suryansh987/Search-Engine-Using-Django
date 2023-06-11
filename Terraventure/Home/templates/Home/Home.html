@@ -1,0 +1,31 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraventure.com</title>
+    <link rel="shortcut icon" href="{% static './Files/favicon.ico' %}" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="{% static './Files/Home.css' %}">
+<!-- <link rel="stylesheet" href="Home.css"> -->
+<body>
+    <div id="container">
+    <nav id="logo">
+        <img src="{% static './Files/logo4.jpg' %}" alt="Terraventure.com">
+        <!-- <img src="logo4.jpg" alt=""> -->
+        <a href="#" target="_blank" id="lsbtn1">Login</a>
+        <a href="#" target="_blank" id="lsbtn2">SignUp</a>
+    </nav>
+    <form action="/query-search/" method="get" id="search-bar">
+        <input type="search" name="query" id="query">
+        <button type="submit" id="btn">Search</button>
+    </form>
+    <hr>
+    </div>
+    <div id="display-box">
+    {{ re|safe }}
+    </div>
+</body>
+</html>

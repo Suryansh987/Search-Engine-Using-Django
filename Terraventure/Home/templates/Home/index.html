@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraventure.com</title>
+    <link rel="shortcut icon" href="{% static './Files/favicon.ico' %}" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="{% static './Files/index.css' %}">
+<body>
+    <header>
+        <nav>
+            <ul id="navbar">
+                <img src="{% static './Files/logo4.jpg' %}" alt="Terraventure" id="logo">
+                <li class="lsbtn"><a href="#">Log in</a></li>
+                <li class="lsbtn"><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="name">Terraventure.com</h1>
+    </main>
+    <div id="search-bar">
+        <form action="query-search/" method="get"><input type="search" name="query" id="s-bar" placeholder="Search the web..." autocomplete="on"></form>
+        <span>
+            <img src="{% static './Files/MAG.png' %}" alt="&#128269;" id="mag-glass">
+            <button id="vc"><img src="{% static './Files/gvc.png' %}" alt="." id="vc-img"></button>
+        </span>
+    </div>
+    <footer>
+        Copyright &copy;| Terraventure.com
+    </footer>
+</body>
+</html>
